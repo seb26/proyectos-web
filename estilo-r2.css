@@ -1,0 +1,62 @@
+/* Sebastian Reategui */
+
+body {
+    font: 15px / 1.5 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;  
+    background:#222;
+    color:#fff;
+}
+#contenidor {
+
+}
+
+
+html, body { height: 100%; }
+
+
+/* NAV */
+#nav {
+    background-color:rgba(0,0,0,.02);
+    text-align:center;
+}
+#nav .dropdown-menu {
+    background-color:rgba(52,58,64,.02);
+    border:none;
+    border-radius:0 0 5px 5px;
+}
+#nav .dropdown-item {
+    color:white;
+}
+#nav .dropdown-item:hover {
+    color:black;
+}
+#nav .dropdown-item:active {
+    color:white;
+}
+#nav .dropdown-item a {
+    background-color:rgba(0,0,0,.5)
+}
+
+/* CONTENIDO */
+#contenido {
+}
+
+/* POSTS */
+#posts {
+}
+.post {
+    width:100%;
+    text-align:center;
+}
+.post img {
+    width:620px;
+}
+.pie {
+    display:none;
+}
+.pie-texto {
+    font-size:0.9em;
+}
+.pie-info {
+    font-size:0.7em;
+    color:#666;
+}

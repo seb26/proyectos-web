@@ -1,0 +1,101 @@
+/* Sebastian Reategui */
+
+body {
+    font: 15px / 1.5 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;  
+    background:#222;
+    color:#fff;
+}
+#contenidor {
+
+}
+
+
+
+html, body { height: 100%; }
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px;
+}
+
+.grid-container {
+    height: 100%;
+}
+
+.grid-container > #lado, .wrapper > .push {
+    height: 50px;
+    clear: both;
+}
+
+
+#toolbar {
+    height: auto;
+    padding: 10px 20px 10px 15px;
+    background-color: rgba(170, 170, 170, 0.5);
+    border: 1px solid #AAA;
+    border-radius: 0px 5px 5px 0px;
+    text-align: center;
+    margin: 0px auto 0px 279px;
+}
+.wrapper {
+    position: fixed;
+    background:red;
+    top: 30%;
+    left: 50%;
+}
+
+
+
+/* LADO */
+#lado {
+
+}
+#lado-nombre { 
+    font-weight:bold;
+    color:#FE6B44;
+}
+.grupo {
+    border:1px solid #548796;
+    margin:1em 0;
+}
+.grupo .item {
+    padding:10px;
+}
+.grupo .item a {
+    color:#E3F0C6;
+}
+
+#test .grid-33 {
+    background:#FE6B44;
+    padding:1em;
+    text-align:center;
+}
+
+/* CONTENIDO */
+#contenido {
+    margin-left:inherit;
+}
+
+/* POSTS */
+#posts {
+
+}
+.post {
+    width:100%;
+    text-align:center;
+}
+.post img {
+    width:560px;
+}
+.pie {
+    display:none;
+}
+.pie-texto {
+    font-size:0.9em;
+}
+.pie-info {
+    font-size:0.7em;
+    color:#666;
+}
