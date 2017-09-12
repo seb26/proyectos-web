@@ -1,60 +1,109 @@
 /* Sebastian Reategui */
 
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    
+    font: 15px / 1.5 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;  
     background:#222;
     color:#fff;
 }
 #contenidor {
-    width:960px;
-    margin:0 auto;
-    background:#333;
+
 }
 
 
-
-/* LADO */
-#lado {
-    width:220px;
-    position:absolute;
-    top:50px;
-    margin:1em;
-}
-#lado-nombre { 
-    font-weight:bold;
-}
-.grupo {
-    border:1px solid #aaa;
-    margin:1em 0;
-}
-.grupo .enlace {
-    color:red;
-    padding:10px;
-}
-.grupo .enlace a {
-    color:yellow;
-}
+html, body { height: 100%; }
 
 
+/* ESTRECHO / ANGOSTO */ 
+@media (min-width: 48em) {
+  .container {
+    max-width: 50rem;
+  }
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+/* NAV */
+#nav {
+    background-color:rgba(0,0,0,.02);
+    text-align:center;
+    text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.5);
+}
+#nav .navbar-brand {
+    margin-right:0;
+}
+.nombre {
+    background-color:rgba(0,0,0,.05);
+    font-weight:600;
+    padding:0px 5px;
+    color:white;
+    letter-spacing:-1px;
+}
+.nombre a {
+    line-height:0.5em;
+}
+#nav .dropdown-toggle:after {
+    /* Para esconder la flecha del dropdown */
+    display:none;
+}
+#nav .dropdown-menu {
+    padding-top:0;
+    margin-top:0.55rem;
+    background-color:rgba(52,58,64,.02);
+    border:none;
+    border-radius:0 0 5px 5px;
+}
+#nav .nav-link {
+    color:white;
+}
+#nav .nav-link:hover {
+    text-decoration:underline;
+}
+#nav .dropdown-item {
+    color:white;
+}
+#nav .dropdown-item:hover {
+    color:black;
+    text-shadow:none;
+}
+#nav .dropdown-item:active {
+    color:white;
+}
+#nav .dropdown-item a {
+    background-color:rgba(0,0,0,1);
+}
+#icon-ig {
+    opacity:0.6;
+}
 
 /* CONTENIDO */
 #contenido {
-    padding:1.5em 0 0 0;
-    margin:0 0 0 260px;
+}
+
+/* ESPECIFÍCO A PÁGINAS */
+.pagina-acerca-de #nav {
+    background:rgba(0,123,255,0.75);
+}
+.pagina-acerca-de #nav .dropdown-menu {
+    background:rgba(0,123,255,0.75);
+}
+
+/* POSTS */
+#posts {
 }
 .post {
-    margin:1.5em 0;
+    width:100%;
+    text-align:center;
 }
 .post img {
-    width:660px;
+    width:620px;
 }
 .pie {
     display:none;
 }
 .pie-texto {
     font-size:0.9em;
-    margin:0.5em 0;
 }
 .pie-info {
     font-size:0.7em;
