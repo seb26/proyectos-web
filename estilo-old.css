@@ -1,0 +1,62 @@
+/* Sebastian Reategui */
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    
+    background:#222;
+    color:#fff;
+}
+#contenidor {
+    width:960px;
+    margin:0 auto;
+    background:#333;
+}
+
+
+
+/* LADO */
+#lado {
+    width:220px;
+    position:absolute;
+    top:50px;
+    margin:1em;
+}
+#lado-nombre { 
+    font-weight:bold;
+}
+.grupo {
+    border:1px solid #aaa;
+    margin:1em 0;
+}
+.grupo .enlace {
+    color:red;
+    padding:10px;
+}
+.grupo .enlace a {
+    color:yellow;
+}
+
+
+
+/* CONTENIDO */
+#contenido {
+    padding:1.5em 0 0 0;
+    margin:0 0 0 260px;
+}
+.post {
+    margin:1.5em 0;
+}
+.post img {
+    width:660px;
+}
+.pie {
+    display:none;
+}
+.pie-texto {
+    font-size:0.9em;
+    margin:0.5em 0;
+}
+.pie-info {
+    font-size:0.7em;
+    color:#666;
+}
