@@ -19,6 +19,19 @@ html, body { height: 100%; }
     text-align:center;
     text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.5);
 }
+#nav .navbar-brand {
+    margin-right:0;
+}
+.nombre {
+    background-color:rgba(0,0,0,.05);
+    font-weight:600;
+    padding:5px;
+    color:white;
+    letter-spacing:-1px;
+}
+.nombre a {
+    line-height:0.5em;
+}
 #nav .dropdown-toggle:after {
     /* Para esconder la flecha del dropdown */
     display:none;
@@ -43,12 +56,6 @@ html, body { height: 100%; }
 }
 #nav .dropdown-item a {
     background-color:rgba(0,0,0,1);
-}
-#nombre {
-    background-color:rgba(0,0,0,.05);
-    font-weight:600;
-    padding:5px;
-    color:white;
 }
 #icon-ig {
     opacity:0.6;
