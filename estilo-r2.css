@@ -29,6 +29,7 @@ html, body { height: 100%; }
 }
 #nav .dropdown-item {
     color:white;
+    -webkit-tap-highlight-color: #ccc;
 }
 #nav .dropdown-item:hover {
     color:black;
