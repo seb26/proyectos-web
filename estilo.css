@@ -32,10 +32,13 @@ footer {
         margin-left:0;
     }
     .nav-item {
-        margin-top:0.65rem;
+        height:2.5rem;
+        line-height:1.5rem;
+        margin-left:.15rem;
     }
     .nav-item.nombre {
-        margin-top:0;
+        margin-top:.75rem;
+        margin-left:0;
     }
 }
 .nav-item.active {
@@ -43,6 +46,7 @@ footer {
     color:white;
     text-shadow:none;
     border-radius:.25rem;
+
 }
 .nombre {
     font-weight:600;
@@ -54,14 +58,30 @@ footer {
 .c-intro {
     max-width:35rem;
 }
+@media (max-width: 575px) { 
+    .c-intro {
+        max-width:100%;
+        width:100%;
+    }
+}
 .c-intro.card-body {
     background:rgba(52, 58, 64,.5);
 }
+.c-intro .card {
+    border-top:none;
+}
 .c-intro .card,
-.c-intro a {
+.c-intro {
     box-shadow:0 0 .25em rgba(255,255,255,.25);
     border-color:rgba(255,255,255,.15);
     background:rgba(52, 58, 64,.5);
+}
+.btn-custom {
+    box-shadow:0 0 .25em rgba(255,255,255,.25);
+    border-color:rgba(255,255,255,.15);
+    background:rgba(52, 58, 64,.5);
+    width:100%;
+    margin:.5rem 0;
 }
 
 /* IMAGENES */
@@ -75,10 +95,4 @@ footer {
     .imagenes img {
         width:100%;
     }
-}
-
- w-100 mt-2 mb-2
-.btn-contacto {
-    width:100% !important;
-    margin:.5rem 0;
 }
