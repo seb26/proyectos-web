@@ -1,10 +1,12 @@
 /* Sebastian Reategui */
 
-body {
+body { 
+  background: url(img/David-Puentes-22-min.jpg) no-repeat right center fixed; 
+
     font: 15px / 1.5 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif; 
-    background:#222;
-    color:#fff;
+    color:white;
 }
+
 a {
     color:white;
 }
@@ -14,16 +16,6 @@ a:hover {
 footer {
     font-size:0.75rem;
     margin:1rem 0;
-    background:#333;
-    padding:.5rem;
-    border-radius:.25rem;
-}
-
-/* ESTRECHO / ANGOSTO */ 
-@media (min-width: 48em) {
-  .container {
-    max-width: 50rem;
-  }
 }
 
 .navbar .navbar-collapse {
@@ -31,142 +23,62 @@ footer {
 }
 
 /* NAV */
-#nav {
-    background-color:rgba(0,0,0,.02);
-    text-align:center;
+.nav {
     text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.5);
-    border-bottom:1px solid rgba(255,255,255,.25);
+    margin-left:2rem;
+}
+@media (max-width: 575px) { 
+    .nav {
+        margin-left:0;
+    }
+    .nav-item {
+        margin-top:0.65rem;
+    }
+    .nav-item.nombre {
+        margin-top:0;
+    }
+}
+.nav-item.active {
+    background:rgba(255,255,255,0.25);
+    color:white;
+    text-shadow:none;
+    border-radius:.25rem;
 }
 .nombre {
-    margin-bottom:3px;
-}
-.nombre span {
     font-weight:600;
-    color:white;
     letter-spacing:-1px;
-}
-#nav .dropdown-toggle:after {
-    /* Para esconder la flecha del dropdown */
-    display:none;
-}
-#nav .dropdown-menu {
-    padding-top:0;
-    margin-top:1.2rem;
-    background-color:rgba(52,58,64,.15);
-    border:1px solid rgba(255,255,255,.25);
-    border-top:0;
-    border-radius:0 0 5px 5px;
-}
-.dd-inicio-menu {
-    margin-top:1.05rem !important;
-}
-#nav .nav-link {
-    color:white;
-}
-#nav .nav-link:hover {
-    text-decoration:underline;
-}
-#nav .dropdown-item {
-    color:white;
-}
-#nav .dropdown-item:hover {
-    color:black;
-    text-shadow:none;
-}
-#nav .dropdown-item:active {
-    color:white;
-}
-#nav .dropdown-item a {
-    background-color:rgba(0,0,0,1);
-}
-/* Subrayar los items cuando se selecionen */
-#nav li.nav-item.show {
-    background:rgba(255,255,255,0.5);
-}
-#icon-ig {
-    opacity:0.6;
+    font-size:1.5rem;
+    white-space:nowrap;
 }
 
-/* CONTENIDO */
-.jumbotron-img {
-    max-width:660px;
-    background-size:660px;
-    border-radius:0;
-    border-bottom-right-radius: .5rem;
-    border-bottom-left-radius: .5rem;
-    text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.5);
+.c-intro {
+    max-width:35rem;
 }
-@media (min-width: 319px) { 
-    .jumbotron-img {
-        background-size:500px;
+.c-intro.card-body {
+    background:rgba(52, 58, 64,.5);
+}
+.c-intro .card,
+.c-intro a {
+    box-shadow:0 0 .25em rgba(255,255,255,.25);
+    border-color:rgba(255,255,255,.15);
+    background:rgba(52, 58, 64,.5);
+}
+
+/* IMAGENES */
+.imagenes img {
+}
+.img-tall {
+    width:50%;
+    clear:both;
+}
+@media (max-width:767px) {
+    .imagenes img {
+        width:100%;
     }
 }
-@media (min-width: 400px) { 
-    .jumbotron-img {
-        background-size:660px;
-    }
-}
-.jumbotron-img hr {
-    border-color:rgba(255,255,255,0.5)
-}
-.jumbotron-img p {
-    background-color:rgba(0,0,0,.05);
-    border-radius:.25rem;
-    padding:1rem;
-    font-weight:400;
-}
-.jumbotron-genero {
-    width:100%;
-    margin:.25rem auto;
-}
-.jumbotron-genero h1.display-5 {
-    font-weight:400;
-}
 
-/* ESPECIFÍCO A PÁGINAS */
-/* acerca-de.html */
-.pagina-acerca-de #nav {
-    background:rgba(0,123,255,0.75);
-}
-.pagina-acerca-de #nav .dropdown-menu {
-    background:rgba(0,123,255,0.75);
-}
-/* index.html */
-#j-lead {
-    background-image:url(img/david-ig-4.jpg);
-    padding-top:8rem;
-    margin:auto;
-}
-#j2 {
-    background-image:url(img/david-ig-6.jpg);
-    background-position:center;
-}
-#j3 {
-    background-image:url(img/david-ig-5.jpg);
-    background-position:center;
-}
-#j4 {
-    background-image:url(img/david-ig-3.jpg);
-    background-position:center;
-}
-
-/* POSTS */
-#posts {
-}
-.post {
-    width:100%;
-    text-align:center;
-}
-.post img {
-    width:620px;
-}
-.pie {
-    display:none;
-}
-.pie-texto {
-    font-size:0.9em;
-}
-.pie-info {
-    font-size:0.7em;
-    color:#666;
+ w-100 mt-2 mb-2
+.btn-contacto {
+    width:100% !important;
+    margin:.5rem 0;
 }
