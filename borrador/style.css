@@ -1,0 +1,130 @@
+body {
+    background-color:white;
+}
+nav {
+    background-color:#0b121a;
+}
+
+
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 50px;
+}
+
+footer {
+  padding: 30px 0;
+}
+
+
+
+/* NAV */
+/* NAV for desktop */
+.nav-subcats {
+  background:none;
+  
+  /* Bootstrap .justify-content-center */
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  margin-left:50px;
+  padding-top:30px;
+  
+  /* Bootstrap .fixed-top */
+  position: fixed;
+  top: 70;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.nav-subcat-link {
+  font-size:1.1rem;
+  padding:.5rem;
+  color:white;
+  text-align:left;
+  text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.5);
+  width:100%;
+  margin:.5rem 0;
+  
+}
+.nav-subcat-link:hover {
+  color:white;
+}
+.nav-subcat-link.active {
+  background:rgba(255,255,255,0.25);
+  border-radius:.25rem;
+}
+/* NAV for mobile */
+@media (max-width:575px) {
+  .nav-subcats {
+    padding:0;
+    margin:0;
+    position:inherit;
+    z-index:0;
+    background:grey;
+  }
+  .nav-subcat-link {
+    width:auto;
+  }
+}
+
+/* NAV -- repeated on mobile at bottom */
+#repeat-navigation .jump-to-top {
+  display:block;
+}
+@media (min-width:577px) {
+  #repeat-navigation {
+    display:none !important;
+  }
+}
+
+/* JUMP TO TOP */
+/* Position desktop: on the left. */
+.jump-to-top {
+  /* Bootstrap .fixed-top
+      [MODIFIED] */
+  position: fixed;
+  top:auto;
+  bottom:70px;
+  left:50px;
+  right:auto;
+  z-index: 1030;
+}
+.jump-to-top a {
+  background:rgba(255,255,255,0.25);
+  -webkit-filter: drop-shadow( 1px 1px 1px #000 );
+  filter: drop-shadow( 1px 1px 1px #000 );
+  border-radius:.25rem;
+  padding:1rem;
+  padding-bottom:.5rem;
+}
+
+/* Position mobile: in the centre. */
+@media (max-width:575px) {
+  .jump-to-top {
+    width:100%;
+    left:auto;
+    bottom:70px;
+    text-align:center;
+  }
+}
+
+
+/* TABS */
+
+/* By default, show all images on the page */
+/* With JS, this class is removed to */
+/* allow tab functionality to take over */
+.tab-pane-initial {
+  display:block !important;
+  color:red;
+}
+
+.images img {
+  width:100%;
+}
