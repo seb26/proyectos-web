@@ -1,4 +1,4 @@
-/* Sebastian Reategui */
+@charset "utf-8";
 
 body { 
   background: url(img/David-Puentes-22-min.jpg) no-repeat right center fixed; 
@@ -16,6 +16,8 @@ a:hover {
 footer {
     font-size:0.75rem;
     margin:1rem 0;
+    width:100%;
+    text-align:center;
 }
 
 .navbar .navbar-collapse {
@@ -26,10 +28,12 @@ footer {
 .nav {
     text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.5);
     margin-left:2rem;
+    margin-top:1rem;
 }
 @media (max-width: 575px) { 
     .nav {
         margin-left:0;
+        margin-top:0;
     }
     .nav-item {
         height:2.5rem;
@@ -41,18 +45,22 @@ footer {
         margin-left:0;
     }
 }
-.nav-item.active {
-    background:rgba(255,255,255,0.25);
-    color:white;
-    text-shadow:none;
-    border-radius:.25rem;
-
-}
 .nombre {
     font-weight:600;
     letter-spacing:-1px;
     font-size:1.5rem;
     white-space:nowrap;
+}
+.nav-item.active,
+.nav-item p {
+    background:rgba(255,255,255,0.25);
+    color:white;
+    text-shadow:none;
+    border-radius:.25rem;
+}
+.nav-item p {
+    width:11.5rem;
+    margin-left:.5rem;
 }
 
 .c-intro {
@@ -94,5 +102,19 @@ footer {
 @media (max-width:767px) {
     .imagenes img {
         width:100%;
+    }
+}
+
+
+.shift-right {
+    width:75%;
+    margin-left:220px;
+    margin-top:70px;
+}
+@media (max-width: 767px) { 
+    .shift-right {
+        width:100%;
+        margin-left:0;
+        margin-top:120px;
     }
 }
