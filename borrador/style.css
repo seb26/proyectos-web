@@ -1,5 +1,5 @@
 body {
-    background-color:white;
+    background-color:#EEEEEE;
 }
 nav {
     background-color:#0b121a;
@@ -27,11 +27,11 @@ footer {
 /* NAV */
 /* NAV for desktop */
 .nav-subcats {
-  background:none;
-  
   /* Bootstrap .justify-content-center */
   -ms-flex-pack: center !important;
   justify-content: center !important;
+  
+  background:none;
   margin-left:50px;
   padding-top:30px;
   
@@ -70,6 +70,7 @@ footer {
   }
   .nav-subcat-link {
     width:auto;
+    margin:.25rem auto;
   }
 }
 
@@ -109,7 +110,7 @@ footer {
   .jump-to-top {
     width:100%;
     left:auto;
-    bottom:70px;
+    bottom:75px;
     text-align:center;
   }
 }
@@ -122,9 +123,47 @@ footer {
 /* allow tab functionality to take over */
 .tab-pane-initial {
   display:block !important;
-  color:red;
+}
+.tab-content h2 {
+  display:none;
+}
+.tab-pane-initial .tab-pane-initial-header {
+  display:block;
+  text-align:right;
+  position:relative;
+  margin-top:-50px;
+  bottom:-50px;
+}
+.tab-pane-initial-header span {
+  padding-top:10px;
 }
 
-.images img {
+
+
+
+/* PAGE SPECIFIC */
+
+.about-para {
+  padding:2rem;
+}
+
+.about-image {
+  padding:3rem;
+}
+
+.about-contact {
+  padding:.5rem 2rem;
+}
+
+.about-contact a {
+  background:#ddd;
+  border-radius:.5rem;
+  padding:.5rem .75rem;
+}
+.about-social a {
   width:100%;
+  display:block;
+  text-align:center;
+  padding:1rem;
+  margin:.25rem .25rem;
 }

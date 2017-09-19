@@ -18,15 +18,15 @@
       <svg id="i-caret-bottom" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M30 10 L16 26 2 10 Z" /></svg>
       <!-- <span class="navbar-toggler-icon"></span> -->
     </button>
-    <a class="nav-item nav-link navbar-brand" href="#">Sebastian Reategui</a>
+    <a class="nav-item nav-link navbar-brand" href="about.html">Sebastian Reategui</a>
     <div class="collapse navbar-collapse justify-content-center" id="nav-01">
       <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Photography
+            <a class="nav-item nav-link active" href="index.html">Photography
               <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#">Video</a>
             <a class="nav-item nav-link" href="#">Design</a>
             <a class="nav-item nav-link" href="#">Blog</a>
-            <a class="nav-item nav-link" href="#">About&nbsp;&sdot;&nbsp;Contact</a>
+            <a class="nav-item nav-link" href="about.html">About&nbsp;&sdot;&nbsp;Contact</a>
       </div>
     </div>
 </nav>
@@ -35,11 +35,12 @@
   
   
   
-  <div class="nav col-sm-2 nav-subcats" id="nab-subcat-tabs" role="tablist">
+  <div class="nav col-sm-3 nav-subcats" id="nab-subcat-tabs" role="tablist">
       <a class="nav-subcat-link active" data-toggle="tab" href="#people" role="tab" aria-controls="people">People</a>
       <a class="nav-subcat-link" data-toggle="tab" href="#portraits" role="tab" aria-controls="portraits">Portraits</a>
       <a class="nav-subcat-link" data-toggle="tab" href="#environment" role="tab" aria-controls="environment">Environment</a>
       <a class="nav-subcat-link" data-toggle="tab" href="#urban" role="tab" aria-controls="urban">Urban</a>
+      <a class="nav-subcat-link" data-toggle="tab" href="#photojournalism" role="tab" aria-controls="photojournalism">Photojournalism</a>
   </div>
   <div class="jump-to-top">
     <a class="nav-subcat-link" href="#">
@@ -49,33 +50,48 @@
 
 <div class="tab-content nav-subcat-content images">
   <div class="tab-pane tab-pane-initial show active" id="people" role="tabpanel">
-    <!-- the first image is a normal element -->
-    <img class="img-fluid" src="img/20170410 Medellin-1435.jpg" />
-    <!-- the rest are dynamically loaded -->
-    <img class="img-fluid" data-src="img/06082017 Laura en carro-3601.jpg" /><noscript><img class="img-fluid" src="img/06082017 Laura en carro-3601.jpg" /></noscript>
-  <img class="img-fluid" data-src="img/2015-09-13-IMG_1948.jpg" /><noscript><img class="img-fluid" src="img/2015-09-13-IMG_1948.jpg" /></noscript>
-    <img class="img-fluid" data-src="img/06082017 Laura en carro-3601.jpg" /><noscript><img class="img-fluid" src="img/06082017 Laura en carro-3601.jpg" /></noscript>
-  <img class="img-fluid" data-src="img/2015-09-13-IMG_1948.jpg" /><noscript><img class="img-fluid" src="img/2015-09-13-IMG_1948.jpg" /></noscript>
-    <img class="img-fluid" data-src="img/06082017 Laura en carro-3601.jpg" /><noscript><img class="img-fluid" src="img/06082017 Laura en carro-3601.jpg" /></noscript>
+    <h2 class="tab-pane-initial-header"><span>People</span></h2>
+        <!-- the first image is a normal element -->
+    <img class="img-fluid img-noload" src="img/20170410 Medellin-1435.jpg" />
+        <!-- the rest are dynamically loaded -->
+    <img class="img-fluid img-dload" data-src="img/06082017 Laura en carro-3601.jpg" /><noscript><img class="img-fluid" src="img/06082017 Laura en carro-3601.jpg" /></noscript>
+    <img class="img-fluid img-dload" data-src="img/2015-09-13-IMG_1948.jpg" /><noscript><img class="img-fluid" src="img/2015-09-13-IMG_1948.jpg" /></noscript>
+    <img class="img-fluid img-dload" data-src="img/06082017 Laura en carro-3601.jpg" /><noscript><img class="img-fluid" src="img/06082017 Laura en carro-3601.jpg" /></noscript>
+    <img class="img-fluid img-dload" data-src="img/2015-09-13-IMG_1948.jpg" /><noscript><img class="img-fluid" src="img/2015-09-13-IMG_1948.jpg" /></noscript>
+    <img class="img-fluid img-dload" data-src="img/06082017 Laura en carro-3601.jpg" /><noscript><img class="img-fluid" src="img/06082017 Laura en carro-3601.jpg" /></noscript>
   </div>
   <div class="tab-pane tab-pane-initial" id="portraits" role="tabpanel">
-    portraits
-    <img class="img-fluid" data-src="img/20160209-IMG_4599.jpg" /><noscript><img class="img-fluid" src="img/20160209-IMG_4599.jpg" /></noscript>
-    <img class="img-fluid" data-src="img/20170304 Villa de Leyva-0297.jpg" /><noscript><img class="img-fluid" src="img/20170304 Villa de Leyva-0297.jpg" /></noscript>
+    <h2 class="tab-pane-initial-header"><span>Portraits</span></h2>
+    <img class="img-fluid img-noload" src="img/20160209-IMG_4599.jpg" />
+    <img class="img-fluid img-dload" src="img/20170304 Villa de Leyva-0297.jpg" />
+    <img class="img-fluid img-dload" data-src="img/20160209-IMG_4599.jpg" /><noscript><img class="img-fluid" src="img/20160209-IMG_4599.jpg" /></noscript>
+    <img class="img-fluid img-dload" data-src="img/20170304 Villa de Leyva-0297.jpg" /><noscript><img class="img-fluid" src="img/20170304 Villa de Leyva-0297.jpg" /></noscript>
   </div>
   <div class="tab-pane tab-pane-initial" id="environment" role="tabpanel">
-    environment
-    <img class="img-fluid" data-src="img/20170410 Medellin-1435.jpg" /><noscript><img class="img-fluid" src="img/20170410 Medellin-1435.jpg" /></noscript>
-    <img class="img-fluid" data-src="img/20170331 Fstudio-1059.jpg" /><noscript><img class="img-fluid" src="img/20170331 Fstudio-1059.jpg" /></noscript>
+    <h2 class="tab-pane-initial-header"><span>Environment</span></h2>
+    <img class="img-fluid img-noload" src="img/20170410 Medellin-1435.jpg" />
+    <img class="img-fluid img-dload" data-src="img/20170331 Fstudio-1059.jpg" /><noscript><img class="img-fluid" src="img/20170331 Fstudio-1059.jpg" /></noscript>
+    <img class="img-fluid img-dload" data-src="img/20170410 Medellin-1435.jpg" /><noscript><img class="img-fluid" src="img/20170410 Medellin-1435.jpg" /></noscript>
+    <img class="img-fluid img-dload" data-src="img/20170331 Fstudio-1059.jpg" /><noscript><img class="img-fluid" src="img/20170331 Fstudio-1059.jpg" /></noscript>
   </div>
   <div class="tab-pane tab-pane-initial" id="urban" role="tabpanel">
-    urban
-    <img class="img-fluid" data-src="img/20170520-La Candelaria-2668.jpg" /><noscript><img class="img-fluid" src="img/20170520-La Candelaria-2668.jpg" /></noscript>
-    <img class="img-fluid" data-src="img/29042017 Bquilla Santa Marta-2086.jpg" /><noscript><img class="img-fluid" src="img/29042017 Bquilla Santa Marta-2086.jpg" /></noscript>
+    <h2 class="tab-pane-initial-header"><span>Urban</span></h2>
+    <img class="img-fluid img-noload" src="img/20170520-La Candelaria-2668.jpg" />
+    <img class="img-fluid img-dload" data-src="img/29042017 Bquilla Santa Marta-2086.jpg" /><noscript><img class="img-fluid" src="img/29042017 Bquilla Santa Marta-2086.jpg" /></noscript>
+    <img class="img-fluid img-dload" data-src="img/20170520-La Candelaria-2668.jpg" /><noscript><img class="img-fluid" src="img/20170520-La Candelaria-2668.jpg" /></noscript>
+    <img class="img-fluid img-dload" data-src="img/29042017 Bquilla Santa Marta-2086.jpg" /><noscript><img class="img-fluid" src="img/29042017 Bquilla Santa Marta-2086.jpg" /></noscript>
+  </div>
+  <div class="tab-pane tab-pane-initial" id="photojournalism" role="tabpanel">
+    <h2 class="tab-pane-initial-header"><span>Photojournalism</span></h2>
+    <img class="img-fluid img-noload" src="img/20160126-IMG_4402.jpg" />
+    <img class="img-fluid img-noload" src="img/20160126-IMG_4463.jpg" />
+    <img class="img-fluid img-dload" data-src="img/20160318-IMG_4966.jpg" /><noscript><img class="img-fluid" src="img/20160318-IMG_4966.jpg" /></noscript>
+    <img class="img-fluid img-dload" data-src="img/20170901-FARC-3998.jpg" /><noscript><img class="img-fluid" src="img/20170901-FARC-3998.jpg" /></noscript>
+    <img class="img-fluid img-dload" data-src="img/20170901-FARC-4193.jpg" /><noscript><img class="img-fluid" src="img/20170901-FARC-4193.jpg" /></noscript>
   </div>
 </div>
 
-<div class="row d-none" id="repeat-navigation">
+<div class="d-none" id="repeat-navigation">
 </div>
   
   
@@ -90,7 +106,11 @@
   
   
   <script>
-  $(function () {
+$(document).ready(function() {
+  
+    // Use jquery unveil to only load images when tab is selected
+    $(".img-dload").unveil(200);
+  
     // Without JS, all sections show because of .tab-pane-initial
     // always being shown with display:block !important.
     // But if JS is used, remove this class and let tabs work as usual.
@@ -103,10 +123,7 @@
     $('#repeat-navigation').removeClass('d-none');
 
     
-    // Use jquery unveil to only load images when tab is selected
-    $("img").unveil();
     });
-  
 </script>
   </body>
 </html>
