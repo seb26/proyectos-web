@@ -40,7 +40,7 @@
   
   
   
-<ul class="nav nav-subcat" id="myTab" role="tablist">
+<ul class="nav nav-subcat" id="nab-subcat-tabs" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" data-toggle="tab" href="#people" role="tab" aria-controls="people">people</a>
   </li>
@@ -55,27 +55,28 @@
   </li>
 </ul>
 
-<div class="tab-content nav-subcat-content">
-  <div class="tab-pane active" id="people" role="tabpanel">
-    <img class="img-fluid" data-src="img/2015-09-13-IMG_1948.jpg" />
-    <img class="img-fluid" data-src="img/06082017 Laura en carro-3601.jpg" />
+<div class="tab-content nav-subcat-content imagenes">
+  <div class="tab-pane tab-pane-initial show active" id="people" role="tabpanel">
+    <img class="img-fluid" data-src="img/2015-09-13-IMG_1948.jpg" /><noscript><img class="img-fluid" src="img/2015-09-13-IMG_1948.jpg" /></noscript>
+    <img class="img-fluid" data-src="img/06082017 Laura en carro-3601.jpg" /><noscript><img class="img-fluid" src="img/06082017 Laura en carro-3601.jpg" /></noscript>
   </div>
-  <div class="tab-pane" id="portraits" role="tabpanel">
-    <img class="img-fluid" data-src="img/20160209-IMG_4599.jpg" />
-    <img class="img-fluid" data-src="img/20170304 Villa de Leyva-0297.jpg" />
+  <div class="tab-pane tab-pane-initial" id="portraits" role="tabpanel">
+    portraits
+    <img class="img-fluid" data-src="img/20160209-IMG_4599.jpg" /><noscript><img class="img-fluid" src="img/20160209-IMG_4599.jpg" /></noscript>
+    <img class="img-fluid" data-src="img/20170304 Villa de Leyva-0297.jpg" /><noscript><img class="img-fluid" src="img/20170304 Villa de Leyva-0297.jpg" /></noscript>
   </div>
-  <div class="tab-pane" id="environment" role="tabpanel">
-    <img class="img-fluid" data-src="img/20170410 Medellin-1435.jpg" />
-    <img class="img-fluid" data-src="img/20170331 Fstudio-1059.jpg" />
+  <div class="tab-pane tab-pane-initial" id="environment" role="tabpanel">
+    environment
+    <img class="img-fluid" data-src="img/20170410 Medellin-1435.jpg" /><noscript><img class="img-fluid" src="img/20170410 Medellin-1435.jpg" /></noscript>
+    <img class="img-fluid" data-src="img/20170331 Fstudio-1059.jpg" /><noscript><img class="img-fluid" src="img/20170331 Fstudio-1059.jpg" /></noscript>
   </div>
-  <div class="tab-pane" id="urban" role="tabpanel">
-    <img class="img-fluid" data-src="img/20170520-La Candelaria-2668.jpg" />
-    <img class="img-fluid" data-src="img/29042017 Bquilla Santa Marta-2086.jpg" />
+  <div class="tab-pane tab-pane-initial" id="urban" role="tabpanel">
+    urban
+    <img class="img-fluid" data-src="img/20170520-La Candelaria-2668.jpg" /><noscript><img class="img-fluid" src="img/20170520-La Candelaria-2668.jpg" /></noscript>
+    <img class="img-fluid" data-src="img/29042017 Bquilla Santa Marta-2086.jpg" /><noscript><img class="img-fluid" src="img/29042017 Bquilla Santa Marta-2086.jpg" /></noscript>
   </div>
+
 </div>
-
-
-
 
 
 
@@ -89,11 +90,17 @@
   
   <script>
   $(function () {
-    $('#myTab a:last').tab('show')
-  });
-  
-    $(function() {
-        $("img").unveil(300);
+    // Without JS, all sections show because of .tab-pane-initial
+    // always being shown with display:block !important.
+    // But if JS is used, remove this class and let tabs work as usual.
+    $('.tab-pane').removeClass('tab-pane-initial');
+
+    // Enable tab functionality, and show the first section
+    $('#nab-subcat-tabs a:first').tab('show');
+
+    
+    // Use jquery unveil to only load images when tab is selected
+    $("img").unveil();
     });
   
 </script>
