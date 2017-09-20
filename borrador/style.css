@@ -147,10 +147,13 @@ body.page-about a {
 }
 
 .about-para {
-  padding:2rem;
+  padding-top:2rem;
+  padding-bottom:0rem;
+  padding-left:2rem;
+  padding-right:2rem;
 }
 .about-image {
-  padding:3rem;
+  padding:2rem;
 }
 .about-contact {
   padding:.5rem 2rem;
