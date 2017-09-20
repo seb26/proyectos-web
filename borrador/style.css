@@ -24,65 +24,58 @@ footer {
 
 
 
-/* NAV */
-/* NAV for desktop */
-.nav-subcats {
-  /* Bootstrap .justify-content-center */
-  -ms-flex-pack: center !important;
-  justify-content: center !important;
-  
-  background:none;
-  margin-left:50px;
-  padding-top:30px;
+/* NAV SUBCAT */
+/* for: desktop */
+.nav-subcat {
+  text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.5);
+  margin-top:1rem;
   
   /* Bootstrap .fixed-top */
   position: fixed;
-  top: 70;
-  right: 0;
-  left: 0;
+  top:70px;
+  right:0;
+  left:70px;
   z-index: 1030;
 }
-.nav-subcat-link {
-  font-size:1.1rem;
-  padding:.5rem;
-  color:white;
-  text-align:left;
-  text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.5);
-  width:100%;
-  margin:.5rem 0;
-  
-}
-.nav-subcat-link:hover {
+.nav-subcat a {
   color:white;
 }
-.nav-subcat-link.active {
-  background:rgba(255,255,255,0.25);
-  border-radius:.25rem;
+.nav-subcat .dropdown-toggle {
+  font-size:1.5rem;
+  color:white;
+  background:rgba(255,255,255,0.3);
+  border:none;
+  border-radius:.5rem;
+  padding:.75rem 1.25rem;
 }
-/* NAV for mobile */
+.nav-subcat .dropdown-toggle:focus {
+  border:none;
+  outline:none;
+}
+.nav-subcat .dropdown-toggle:hover {
+  cursor:pointer;
+  text-decoration:underline;
+}
+.nav-subcat .dropdown-menu {
+  background:rgba(255,255,255,0.3);
+  border:none;
+  margin-top:.5rem;
+}
+.nav-subcat .dropdown-item {
+}
+/* for: mobile */
 @media (max-width:575px) {
-  .nav-subcats {
-    padding:0;
-    margin:0;
-    position:inherit;
-    z-index:0;
-    background:grey;
+  .nav-subcat {
+    top:auto;
+    left:20px;
+    bottom:70px;
   }
-  .nav-subcat-link {
-    width:auto;
-    margin:.25rem auto;
+  .nav-subcat .dropdown-toggle {
+    font-size:1rem;
   }
 }
 
-/* NAV -- repeated on mobile at bottom */
-#repeat-navigation .jump-to-top {
-  display:block;
-}
-@media (min-width:577px) {
-  #repeat-navigation {
-    display:none !important;
-  }
-}
+
 
 /* JUMP TO TOP */
 /* Position desktop: on the left. */
@@ -98,11 +91,12 @@ footer {
 }
 .jump-to-top a {
   background:rgba(255,255,255,0.25);
+  color:white;
   -webkit-filter: drop-shadow( 1px 1px 1px #000 );
   filter: drop-shadow( 1px 1px 1px #000 );
   border-radius:.25rem;
-  padding:1rem;
-  padding-bottom:.5rem;
+  padding:1.5rem 1rem;
+  padding-bottom:.75rem;
 }
 
 /* Position mobile: in the centre. */

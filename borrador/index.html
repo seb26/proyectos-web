@@ -34,22 +34,28 @@
 <!-- ##################### -->
   
   
+<div class="dropdown show nav-subcat" >
+  <button class="dropdown-toggle" role="button" id="nav-subcat-toggle-link"
+      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">People</button>
+  <div class="dropdown-menu" aria-labelledby="nav-subcat-toggle-link">
+    <a class="dropdown-item" data-toggle="tab" href="#people" role="tab" aria-controls="people">People</a>
+    <a class="dropdown-item" data-toggle="tab" href="#portraits" role="tab" aria-controls="portraits">Portraits</a>
+    <a class="dropdown-item" data-toggle="tab" href="#environment" role="tab" aria-controls="environment">Environment</a>
+    <a class="dropdown-item" data-toggle="tab" href="#urban" role="tab" aria-controls="urban">Urban</a>
+    <a class="dropdown-item" data-toggle="tab" href="#photojournalism" role="tab" aria-controls="photojournalism">Photojournalism</a>
+  </div>
+</div>
+    
+<div class="jump-to-top">
+  <a class="nav-subcat-link" href="#">
+      <svg id="i-arrow-top" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px"><path d="M6 10 L16 2 26 10 M16 2 L16 30" /></svg>
+    </a>
+</div>
   
-  <div class="nav col-sm-3 nav-subcats" id="nab-subcat-tabs" role="tablist">
-      <a class="nav-subcat-link active" data-toggle="tab" href="#people" role="tab" aria-controls="people">People</a>
-      <a class="nav-subcat-link" data-toggle="tab" href="#portraits" role="tab" aria-controls="portraits">Portraits</a>
-      <a class="nav-subcat-link" data-toggle="tab" href="#environment" role="tab" aria-controls="environment">Environment</a>
-      <a class="nav-subcat-link" data-toggle="tab" href="#urban" role="tab" aria-controls="urban">Urban</a>
-      <a class="nav-subcat-link" data-toggle="tab" href="#photojournalism" role="tab" aria-controls="photojournalism">Photojournalism</a>
-  </div>
-  <div class="jump-to-top">
-    <a class="nav-subcat-link" href="#">
-        <svg id="i-arrow-top" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px"><path d="M6 10 L16 2 26 10 M16 2 L16 30" /></svg>
-      </a>
-  </div>
 
 <div class="tab-content nav-subcat-content images">
   <div class="tab-pane tab-pane-initial show active" id="people" role="tabpanel">
+    
     <h2 class="tab-pane-initial-header"><span>People</span></h2>
         <!-- the first image is a normal element -->
     <img class="img-fluid img-noload" src="img/20170410 Medellin-1435.jpg" />
@@ -121,6 +127,12 @@ $(document).ready(function() {
     
     $('.nav-subcats').clone().appendTo('#repeat-navigation');
     $('#repeat-navigation').removeClass('d-none');
+  
+    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+      // Change the label of the toggle link to
+      // the name of the tab which we just switched to.
+      $('#nav-subcat2-toggle-link').text(e.target.innerHTML);
+    });
 
     
     });
