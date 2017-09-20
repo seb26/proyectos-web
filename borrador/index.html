@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="style.css" />
         
     </head>
-<body class="page-index">
+<body class="page-index" id="top">
     
 <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-01" aria-controls="nav-01" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,7 @@
 </nav>
 
 <!-- ##################### -->
-
+<!-- 
 <div class="nav dropdown show nav-subcat" >
   <button class="dropdown-toggle" role="button" id="nav-subcat-toggle-link"
       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">People</button>
@@ -43,13 +43,35 @@
     <a class="dropdown-item" data-toggle="tab" href="#urban" role="tab" aria-controls="urban">Urban</a>
     <a class="dropdown-item" data-toggle="tab" href="#photojournalism" role="tab" aria-controls="photojournalism">Photojournalism</a>
   </div>
+</div> -->
+
+  <!-- Split dropup button -->
+<div class="nav-subcat-wrapper">
+<div class="nav dropup nav-subcat">
+  <a id="nav-subcat-jump-to-top" href="#top" class="nav-subcat-toggle left">
+    <svg id="i-arrow-top" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px"><path d="M6 10 L16 2 26 10 M16 2 L16 30" /></svg>
+  </a>
+  <button id="nav-subcat-toggle-button" type="button" class="nav-subcat-toggle right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    People
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" data-toggle="tab" href="#people" role="tab" aria-controls="people">People</a>
+    <a class="dropdown-item" data-toggle="tab" href="#portraits" role="tab" aria-controls="portraits">Portraits</a>
+    <a class="dropdown-item" data-toggle="tab" href="#environment" role="tab" aria-controls="environment">Environment</a>
+    <a class="dropdown-item" data-toggle="tab" href="#urban" role="tab" aria-controls="urban">Urban</a>
+    <a class="dropdown-item" data-toggle="tab" href="#photojournalism" role="tab" aria-controls="photojournalism">Photojournalism</a>
+  </div>
+</div>
 </div>
 
+  <!-- 
 <div class="jump-to-top">
   <a class="nav-subcat-link" href="#">
-      <svg id="i-arrow-top" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px"><path d="M6 10 L16 2 26 10 M16 2 L16 30" /></svg>
-    </a>
-</div>
+    <svg id="i-arrow-top" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px"><path d="M6 10 L16 2 26 10 M16 2 L16 30" /></svg>
+    
+  </a>
+</div> -->
   
 
 <div class="tab-content nav-subcat-content images">
@@ -130,7 +152,7 @@ $(document).ready(function() {
     $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
       // Change the label of the toggle link to
       // the name of the tab which we just switched to.
-      $('#nav-subcat2-toggle-link').text(e.target.innerHTML);
+      $('#nav-subcat-toggle-button').text(e.target.innerHTML);
     });
 
     
