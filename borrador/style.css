@@ -143,27 +143,38 @@ footer {
 
 /* PAGE SPECIFIC */
 
+body.page-about a {
+}
+
 .about-para {
   padding:2rem;
 }
-
 .about-image {
   padding:3rem;
 }
-
 .about-contact {
   padding:.5rem 2rem;
 }
-
-.about-contact a {
+.about-social {
+  padding:.5rem 2rem;
+}
+.about-btn-list {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+.about-btn-list li {
+  display:block;
+  float:left;
   background:#ddd;
   border-radius:.5rem;
-  padding:.5rem .75rem;
-}
-.about-social a {
-  width:100%;
-  display:block;
+  padding:.5rem;
+  margin:.25rem;
+  margin-left:0rem;
   text-align:center;
-  padding:1rem;
-  margin:.25rem .25rem;
+}
+@media (max-width:575px) {
+  .about-btn-list li {
+    width:100%;
+  }
 }
