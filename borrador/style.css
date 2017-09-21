@@ -119,10 +119,12 @@ footer {
 
 /* PAGE SPECIFIC */
 /* index.html Photography */
-.images img {
-  max-width:1280px;
-  margin:0 auto;
-  display:block;
+@media (min-width: 1200px) { 
+  .images img {
+    max-width:1280px;
+    margin:0 auto;
+    display:block;
+  }
 }
 
 
