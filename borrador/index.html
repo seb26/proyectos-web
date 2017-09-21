@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="style.css" />
         
     </head>
-<body class="page-index" id="top">
+<body class="page-index no-js" id="top">
     
 <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-01" aria-controls="nav-01" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,19 +48,19 @@
   <!-- Split dropup button -->
 <div class="nav-subcat-wrapper">
 <div class="nav dropup nav-subcat">
-  <a id="nav-subcat-jump-to-top" href="#top" class="nav-subcat-toggle left">
+  <a id="nav-subcat-jump-to-top" href="#top" class="nav-subcat-toggle">
     <svg id="i-arrow-top" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px"><path d="M6 10 L16 2 26 10 M16 2 L16 30" /></svg>
   </a>
-  <button id="nav-subcat-toggle-button" type="button" class="nav-subcat-toggle right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button id="nav-subcat-toggle-button" type="button" class="nav-subcat-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     People
     <span class="sr-only">Toggle Dropdown</span>
   </button>
   <div class="dropdown-menu">
-    <a class="dropdown-item" data-toggle="tab" href="#people" role="tab" aria-controls="people">People</a>
-    <a class="dropdown-item" data-toggle="tab" href="#portraits" role="tab" aria-controls="portraits">Portraits</a>
-    <a class="dropdown-item" data-toggle="tab" href="#environment" role="tab" aria-controls="environment">Environment</a>
-    <a class="dropdown-item" data-toggle="tab" href="#urban" role="tab" aria-controls="urban">Urban</a>
-    <a class="dropdown-item" data-toggle="tab" href="#photojournalism" role="tab" aria-controls="photojournalism">Photojournalism</a>
+    <a class="dropdown-item" href="#people">People</a>
+    <a class="dropdown-item" href="#portraits" >Portraits</a>
+    <a class="dropdown-item" href="#environment">Environment</a>
+    <a class="dropdown-item" href="#urban">Urban</a>
+    <a class="dropdown-item" href="#photojournalism">Photojournalism</a>
   </div>
 </div>
 </div>
@@ -74,48 +74,42 @@
 </div> -->
   
 
-<div class="tab-content nav-subcat-content images">
-  <div class="tab-pane tab-pane-initial show active" id="people" role="tabpanel">
+<div class="images">
     
-    <h2 class="tab-pane-initial-header"><span>People</span></h2>
-        <!-- the first image is a normal element -->
+    
     <img class="img-fluid img-noload" src="img/20170410 Medellin-1435.jpg" />
-        <!-- the rest are dynamically loaded -->
-    <img id="category-first-image" class="img-fluid img-dload" data-src="img/06082017 Laura en carro-3601.jpg" /><noscript><img class="img-fluid" src="img/06082017 Laura en carro-3601.jpg" /></noscript>
-    <img class="img-fluid img-dload" data-src="img/2015-09-13-IMG_1948.jpg" /><noscript><img class="img-fluid" src="img/2015-09-13-IMG_1948.jpg" /></noscript>
     <img class="img-fluid img-dload" data-src="img/06082017 Laura en carro-3601.jpg" /><noscript><img class="img-fluid" src="img/06082017 Laura en carro-3601.jpg" /></noscript>
     <img class="img-fluid img-dload" data-src="img/2015-09-13-IMG_1948.jpg" /><noscript><img class="img-fluid" src="img/2015-09-13-IMG_1948.jpg" /></noscript>
     <img class="img-fluid img-dload" data-src="img/06082017 Laura en carro-3601.jpg" /><noscript><img class="img-fluid" src="img/06082017 Laura en carro-3601.jpg" /></noscript>
-  </div>
-  <div class="tab-pane tab-pane-initial" id="portraits" role="tabpanel">
-    <h2 class="tab-pane-initial-header"><span>Portraits</span></h2>
+    <img class="img-fluid img-dload" data-src="img/2015-09-13-IMG_1948.jpg" /><noscript><img class="img-fluid" src="img/2015-09-13-IMG_1948.jpg" /></noscript>
+    <h2 id="people"><noscript>People</noscript></h2>
+    <img class="img-fluid img-dload" data-src="img/06082017 Laura en carro-3601.jpg" /><noscript><img class="img-fluid" src="img/06082017 Laura en carro-3601.jpg" /></noscript>
+    
+    <h2 id="portraits"><noscript>Portraits</noscript></h2>
     <img class="img-fluid img-noload" src="img/20160209-IMG_4599.jpg" />
     <img class="img-fluid img-dload" src="img/20170304 Villa de Leyva-0297.jpg" />
     <img class="img-fluid img-dload" data-src="img/20160209-IMG_4599.jpg" /><noscript><img class="img-fluid" src="img/20160209-IMG_4599.jpg" /></noscript>
     <img class="img-fluid img-dload" data-src="img/20170304 Villa de Leyva-0297.jpg" /><noscript><img class="img-fluid" src="img/20170304 Villa de Leyva-0297.jpg" /></noscript>
-  </div>
-  <div class="tab-pane tab-pane-initial" id="environment" role="tabpanel">
-    <h2 class="tab-pane-initial-header"><span>Environment</span></h2>
+    
+    <h2 id="environment"><noscript>Environment</noscript></h2>
     <img class="img-fluid img-noload" src="img/20170410 Medellin-1435.jpg" />
     <img class="img-fluid img-dload" data-src="img/20170331 Fstudio-1059.jpg" /><noscript><img class="img-fluid" src="img/20170331 Fstudio-1059.jpg" /></noscript>
     <img class="img-fluid img-dload" data-src="img/20170410 Medellin-1435.jpg" /><noscript><img class="img-fluid" src="img/20170410 Medellin-1435.jpg" /></noscript>
     <img class="img-fluid img-dload" data-src="img/20170331 Fstudio-1059.jpg" /><noscript><img class="img-fluid" src="img/20170331 Fstudio-1059.jpg" /></noscript>
-  </div>
-  <div class="tab-pane tab-pane-initial" id="urban" role="tabpanel">
-    <h2 class="tab-pane-initial-header"><span>Urban</span></h2>
+    
+    <h2 id="urban"><noscript>Urban</noscript></h2>
     <img class="img-fluid img-noload" src="img/20170520-La Candelaria-2668.jpg" />
     <img class="img-fluid img-dload" data-src="img/29042017 Bquilla Santa Marta-2086.jpg" /><noscript><img class="img-fluid" src="img/29042017 Bquilla Santa Marta-2086.jpg" /></noscript>
     <img class="img-fluid img-dload" data-src="img/20170520-La Candelaria-2668.jpg" /><noscript><img class="img-fluid" src="img/20170520-La Candelaria-2668.jpg" /></noscript>
     <img class="img-fluid img-dload" data-src="img/29042017 Bquilla Santa Marta-2086.jpg" /><noscript><img class="img-fluid" src="img/29042017 Bquilla Santa Marta-2086.jpg" /></noscript>
-  </div>
-  <div class="tab-pane tab-pane-initial" id="photojournalism" role="tabpanel">
-    <h2 class="tab-pane-initial-header"><span>Photojournalism</span></h2>
+    
+    <h2 id="photojournalism"><noscript>Photojournalism</noscript></h2>
     <img class="img-fluid img-noload" src="img/20160126-IMG_4402.jpg" />
     <img class="img-fluid img-noload" src="img/20160126-IMG_4463.jpg" />
     <img class="img-fluid img-dload" data-src="img/20160318-IMG_4966.jpg" /><noscript><img class="img-fluid" src="img/20160318-IMG_4966.jpg" /></noscript>
     <img class="img-fluid img-dload" data-src="img/20170901-FARC-3998.jpg" /><noscript><img class="img-fluid" src="img/20170901-FARC-3998.jpg" /></noscript>
     <img class="img-fluid img-dload" data-src="img/20170901-FARC-4193.jpg" /><noscript><img class="img-fluid" src="img/20170901-FARC-4193.jpg" /></noscript>
-  </div>
+
 </div>
 
 <div class="d-none" id="repeat-navigation">
@@ -135,25 +129,23 @@
   <script>
 $(document).ready(function() {
   
-  /*
+      $("body").removeClass("no-js");
+    $("body").addClass("js");
   
+  var page_segments = [ 'people', 'portraits', 'environment', 'urban', 'photojournalism' ];
   $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    var os = $('#category-last-image').offset().top;
-    var ht = $('#category-last-image').height();
-    if(scroll > os - ht){
-        console.log('okhi');
-    }
+    page_segments.forEach(function(segment) {
+      var scroll = $(window).scrollTop();
+      var theSegment = $('#' + segment);
+      var os = theSegment.offset().top;
+      var ht = theSegment.prev().prev().height();
+      if( scroll > os - ht ){
+          $('#nav-subcat-toggle-button').text(theSegment.text());
+      }
+    });
+  });
 
-});
-  
-  var someElement = document.querySelector('#testlol');
-  window.onscroll = function(){
-    //TOP
-    if(someElement.getBoundingClientRect().top <= 0){
-        console.log("TRIGGER: top of div reached.");
-    }
-  */
+
 
   
     // Use jquery unveil to only load images when tab is selected

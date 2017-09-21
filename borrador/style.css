@@ -18,11 +18,14 @@ body {
   padding-top: 50px;
 }
 
-footer {
-  padding: 30px 0;
+/* All anchor links are offsetted by 70px */
+/* which is the height of the navbar. */
+:target:before {
+  content:"";
+  display:block;
+  height:60px;
+  margin:-60px 0 0;
 }
-
-
 
 /* NAV SUBCAT */
 /* for: desktop */
@@ -60,11 +63,11 @@ footer {
   color:white;
   text-decoration:underline;
 }
-.nav-subcat-toggle.left {
+#nav-subcat-jump-to-top {
   border-top-right-radius:0;
   border-bottom-right-radius:0;
 }
-.nav-subcat-toggle.right {
+#nav-subcat-toggle-button {
   border-top-left-radius:0;
   border-bottom-left-radius:0;
 }
@@ -89,29 +92,22 @@ footer {
     margin:0 auto;
   }
 }
-
-
-
-/* TABS */
-
-/* By default, show all images on the page */
-/* With JS, this class is removed to */
-/* allow tab functionality to take over */
-.tab-pane-initial {
-  display:block !important;
-}
-.tab-content h2 {
+/* for: no-javascript */
+.no-js #nav-subcat-toggle-button {
   display:none;
 }
-.tab-pane-initial .tab-pane-initial-header {
-  display:block;
+.no-js #nav-subcat-jump-to-top {
+  border-top-right-radius:.5rem;
+  border-bottom-right-radius:.5rem;
+}
+
+
+.images h2 {
   text-align:right;
   position:relative;
+  top:50px;
   margin-top:-50px;
-  bottom:-50px;
-}
-.tab-pane-initial-header span {
-  padding-top:10px;
+  color:white;
 }
 
 footer {
@@ -128,6 +124,8 @@ footer {
   margin:0 auto;
   display:block;
 }
+
+
 
 body.page-about a {
 }
