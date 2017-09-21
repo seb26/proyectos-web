@@ -81,7 +81,7 @@
         <!-- the first image is a normal element -->
     <img class="img-fluid img-noload" src="img/20170410 Medellin-1435.jpg" />
         <!-- the rest are dynamically loaded -->
-    <img class="img-fluid img-dload" data-src="img/06082017 Laura en carro-3601.jpg" /><noscript><img class="img-fluid" src="img/06082017 Laura en carro-3601.jpg" /></noscript>
+    <img id="category-first-image" class="img-fluid img-dload" data-src="img/06082017 Laura en carro-3601.jpg" /><noscript><img class="img-fluid" src="img/06082017 Laura en carro-3601.jpg" /></noscript>
     <img class="img-fluid img-dload" data-src="img/2015-09-13-IMG_1948.jpg" /><noscript><img class="img-fluid" src="img/2015-09-13-IMG_1948.jpg" /></noscript>
     <img class="img-fluid img-dload" data-src="img/06082017 Laura en carro-3601.jpg" /><noscript><img class="img-fluid" src="img/06082017 Laura en carro-3601.jpg" /></noscript>
     <img class="img-fluid img-dload" data-src="img/2015-09-13-IMG_1948.jpg" /><noscript><img class="img-fluid" src="img/2015-09-13-IMG_1948.jpg" /></noscript>
@@ -134,6 +134,27 @@
   
   <script>
 $(document).ready(function() {
+  
+  /*
+  
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var os = $('#category-last-image').offset().top;
+    var ht = $('#category-last-image').height();
+    if(scroll > os - ht){
+        console.log('okhi');
+    }
+
+});
+  
+  var someElement = document.querySelector('#testlol');
+  window.onscroll = function(){
+    //TOP
+    if(someElement.getBoundingClientRect().top <= 0){
+        console.log("TRIGGER: top of div reached.");
+    }
+  */
+
   
     // Use jquery unveil to only load images when tab is selected
     $(".img-dload").unveil(200);

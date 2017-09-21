@@ -29,7 +29,7 @@ footer {
 .nav-subcat {
   width:auto;
   margin:0 auto;
-  margin-left:4rem;
+  margin-left:6.5rem;
   text-align:center;
 }
 .nav-subcat-wrapper {
@@ -41,7 +41,6 @@ footer {
   width:100%;
   margin:0 auto;
 }
-
 .nav-subcat-toggle {
   font-size:1.5rem;
   color:white;
@@ -93,40 +92,6 @@ footer {
 
 
 
-
-/* JUMP TO TOP */
-/* Position desktop: on the left. */
-.jump-to-top {
-  /* Bootstrap .fixed-top
-      [MODIFIED] */
-  position: fixed;
-  top:auto;
-  bottom:70px;
-  left:50px;
-  right:auto;
-  z-index: 1030;
-}
-.jump-to-top a {
-  background:rgba(255,255,255,0.25);
-  color:white;
-  -webkit-filter: drop-shadow( 1px 1px 1px #000 );
-  filter: drop-shadow( 1px 1px 1px #000 );
-  border-radius:.25rem;
-  padding:1.5rem 1rem;
-  padding-bottom:.75rem;
-}
-
-/* Position mobile: in the centre. */
-@media (max-width:575px) {
-  .jump-to-top {
-    width:100%;
-    left:auto;
-    bottom:75px;
-    text-align:center;
-  }
-}
-
-
 /* TABS */
 
 /* By default, show all images on the page */
@@ -149,10 +114,20 @@ footer {
   padding-top:10px;
 }
 
+footer {
+  font-size:.6rem;
+  color:grey;
+}
 
 
 
 /* PAGE SPECIFIC */
+/* index.html Photography */
+.images img {
+  max-width:1280px;
+  margin:0 auto;
+  display:block;
+}
 
 body.page-about a {
 }
