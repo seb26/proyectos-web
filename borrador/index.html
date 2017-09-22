@@ -62,36 +62,28 @@
   
 
 <div class="images">
-    <!-- <img class="img-fluid img-dload" data-src="img/06082017 Laura en carro-3601.jpg" /><noscript><img class="img-fluid" src="img/06082017 Laura en carro-3601.jpg" /></noscript> -->
+  
+
+  
   
 <div class="image">
   <img class="image-file" src="img/20170611-Quito-2941.jpg" alt="Card image" /> 
-  <div class="image-info">
-    <div class="image-info-body">
-      <div class="image-info-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</div>
-      <div class="image-info-social">
-        17 February 2017 &sdot; 
-        <em>Share</em>: Permalink &sdot; Facebook &sdot; Tumblr
+  <div class="ii"><!-- ii means image-info -->
+    <div class="ii-body">
+      <div class="arrow"></div>
+      <div class="ii-desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p></p>
       </div>
+      <h3 class="ii-share">
+        <div class="ii-location">Quito, Ecuador</div>
+        <div class="ii-date">17 September 2017</div>
+        <div class="ii-share-links">Permalink &sdot; Facebook &sdot; Tumblr</div>
+      </h3>
     </div>
   </div>
-  <div class="image-info-icon">
-    <svg class="i-info" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 14 L16 23 M16 8 L16 10"></path><circle cx="16" cy="16" r="14"></circle></svg>
-  </div>
-</div>
-  <div class="image">
-  <img class="image-file" src="img/20170611-Quito-2941.jpg" alt="Card image" /> 
-  <div class="image-info">
-    <div class="image-info-body">
-      <div class="image-info-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</div>
-      <div class="image-info-social">
-        17 February 2017 &sdot; 
-        <em>Share</em>: Permalink &sdot; Facebook &sdot; Tumblr
-      </div>
-    </div>
-  </div>
-  <div class="image-info-icon">
-    <svg class="i-info" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 14 L16 23 M16 8 L16 10"></path><circle cx="16" cy="16" r="14"></circle></svg>
+  <div class="ii-icon">
+    <svg class="glyph-info" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 14 L16 23 M16 8 L16 10"></path><circle cx="16" cy="16" r="14"></circle></svg>
   </div>
 </div>
 
@@ -145,8 +137,11 @@
   <script type="application/javascript">
 $(document).ready(function() {
   
+  /* Prevent double-click selecting when toggling image info */
+  $('.ii-icon').mousedown(function(e){ e.preventDefault(); });
+  
   var image_focus;
-  $('.image .image-info-icon').click( function() {
+  $('.image .ii-icon').click( function() {
     image_focus = $(this).prev();
     $(image_focus).toggle();
   });
