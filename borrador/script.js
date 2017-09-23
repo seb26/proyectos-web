@@ -34,8 +34,9 @@ $(document).ready(function() {
         return;
       }
       else {
-        // If you click anywhere else
-        $(image_info_overlay).hide();
+        // If you click anywhere else,
+        // Then hide *all* info overlays
+        $('.ii').hide();
       }
     }
     else {
@@ -77,7 +78,7 @@ $(document).ready(function() {
    * Make the Subcategory switcher change
    * according to what section we are on. */
   
-  var page_segments = [ 'people', 'portraits', 'environment', 'urban', 'photojournalism' ];
+  var page_segments = [ 'people', 'portraits', 'photojournalism', 'environment', 'urban', 'architecture' ];
   $(window).scroll(function() {
     page_segments.forEach(function(segment) {
       var scroll = $(window).scrollTop();
@@ -99,6 +100,12 @@ $(document).ready(function() {
     $(e.target).parent().hide();
     clicked_subcat = $(e.target).data('subcat');
     // $('#subcat-menu-' + clicked_subcat).addClass('item-active');
+  });
+  // When user jumps to top, manually change
+  // the label so it says 'People'.
+  // I.e., the first category.
+  $('#subcat-jump-to-top').click(function(e) {
+    $('#subcat-toggle-button').text('People');
   })
 
     
