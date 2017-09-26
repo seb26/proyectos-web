@@ -78,7 +78,7 @@ $(document).ready(function() {
    * Make the Subcategory switcher change
    * according to what section we are on. */
   
-  var page_segments = [ 'people', 'portraits', 'photojournalism', 'environment', 'urban', 'architecture' ];
+  var page_segments = [ 'people', 'photojournalism', 'environment', 'urban', 'architecture' ];
   $(window).scroll(function() {
     page_segments.forEach(function(segment) {
       var scroll = $(window).scrollTop();
