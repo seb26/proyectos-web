@@ -1,6 +1,6 @@
 body {
-    background-color:#111c28;
-    color:white;
+    /* background-color:#111c28;
+    color:white; */
 }
 nav {
     background-color:#0b121a;
@@ -419,4 +419,24 @@ footer {
 }
 .video-license a {
   color:inherit;
+}
+
+
+
+/* 
+ * design.html 
+ */
+
+body.page-design .container {
+  padding-top:2rem;
+}
+
+.scroll-box-x {
+  display:block;
+  width:4000px;
+  white-space:nowrap;
+  overflow-x:scroll;
+}
+.scroll-box-x img {
+  display:inline-block;
 }

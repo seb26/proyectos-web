@@ -78,6 +78,7 @@ $(document).ready(function() {
    * Make the Subcategory switcher change
    * according to what section we are on. */
   
+  /* DISABLED 
   var page_segments = [ 'people', 'photojournalism', 'environment', 'urban', 'architecture' ];
   $(window).scroll(function() {
     page_segments.forEach(function(segment) {
@@ -106,7 +107,8 @@ $(document).ready(function() {
   // I.e., the first category.
   $('#subcat-jump-to-top').click(function(e) {
     $('#subcat-toggle-button').text('People');
-  })
+  });
+  */
 
     
 });
